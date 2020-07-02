@@ -1,0 +1,58 @@
+@page
+@using HelpLocally.Domain
+@model IndexModel
+
+@await Html.PartialAsync("_NavigationPartial", "companies")
+
+<div class="row">
+	@if (User.IsInRole(RolesDefaults.Admin))
+	{
+		<a class="btn btn-success" href="~/Companies/Create">Create</a>
+	}
+</div>
+<br/>
+<form method="post">
+	<table class="table table-list">
+		<thead>
+		<tr>
+			<th>Id</th>
+			<th>Name</th>
+			<th>Nip</th>
+			<th>Bank account number</th>
+			<th>Offers count</th>
+			<th>Acction</th>
+		</tr>
+		</thead>
+		<tbody>
+		@foreach (var company in Model.Companies)
+		{
+			<tr>
+				<td>@company.Id</td>
+				<td>@company.Name</td>
+				<td>@company.Nip</td>
+				<td>@company.BankAccountNumber</td>
+				<td>@company.Offers?.Count()</td>
+				<td class="btn-group">
+					<div class="btn-group" role="group">
+						<button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						</button>
+						<div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+							<a class="dropdown-item" asp-page="./Details" asp-route-id="@company.Id">Show offers</a>
+							@if (User.IsInRole(RolesDefaults.Admin))
+							{
+								<a class="dropdown-item" asp-page="./Edit" asp-route-id="@company.Id">Edit</a>
+								<button class="dropdown-item text-danger"
+								        type="submit"
+								        asp-page-handler="delete"
+								        asp-route-id="@company.Id">
+									Delete
+								</button>
+							}
+						</div>
+					</div>
+				</td>
+			</tr>
+		}
+		</tbody>
+	</table>
+</form>

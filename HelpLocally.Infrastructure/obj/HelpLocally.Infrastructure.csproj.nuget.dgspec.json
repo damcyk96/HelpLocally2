@@ -1,0 +1,132 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/trojan/Desktop/HelpLocally/HelpLocally.Infrastructure/HelpLocally.Infrastructure.csproj": {}
+  },
+  "projects": {
+    "/Users/trojan/Desktop/HelpLocally/HelpLocally.Domain/HelpLocally.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/trojan/Desktop/HelpLocally/HelpLocally.Domain/HelpLocally.Domain.csproj",
+        "projectName": "HelpLocally.Domain",
+        "projectPath": "/Users/trojan/Desktop/HelpLocally/HelpLocally.Domain/HelpLocally.Domain.csproj",
+        "packagesPath": "/Users/trojan/.nuget/packages/",
+        "outputPath": "/Users/trojan/Desktop/HelpLocally/HelpLocally.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/trojan/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/trojan/Desktop/HelpLocally/HelpLocally.Infrastructure/HelpLocally.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/trojan/Desktop/HelpLocally/HelpLocally.Infrastructure/HelpLocally.Infrastructure.csproj",
+        "projectName": "HelpLocally.Infrastructure",
+        "projectPath": "/Users/trojan/Desktop/HelpLocally/HelpLocally.Infrastructure/HelpLocally.Infrastructure.csproj",
+        "packagesPath": "/Users/trojan/.nuget/packages/",
+        "outputPath": "/Users/trojan/Desktop/HelpLocally/HelpLocally.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/trojan/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/Users/trojan/Desktop/HelpLocally/HelpLocally.Domain/HelpLocally.Domain.csproj": {
+                "projectPath": "/Users/trojan/Desktop/HelpLocally/HelpLocally.Domain/HelpLocally.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.Extensions.Logging.Console": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

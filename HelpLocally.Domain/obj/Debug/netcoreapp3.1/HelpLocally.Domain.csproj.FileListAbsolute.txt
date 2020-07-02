@@ -1,0 +1,16 @@
+C:/Users/dariamarek/dev/ATH/aspnet/HelpLocally/HelpLocally.Domain/bin/Debug/netcoreapp3.1/HelpLocally.Domain.deps.json
+C:/Users/dariamarek/dev/ATH/aspnet/HelpLocally/HelpLocally.Domain/bin/Debug/netcoreapp3.1/HelpLocally.Domain.dll
+C:/Users/dariamarek/dev/ATH/aspnet/HelpLocally/HelpLocally.Domain/bin/Debug/netcoreapp3.1/HelpLocally.Domain.pdb
+C:/Users/dariamarek/dev/ATH/aspnet/HelpLocally/HelpLocally.Domain/obj/Debug/netcoreapp3.1/HelpLocally.Domain.csprojAssemblyReference.cache
+C:/Users/dariamarek/dev/ATH/aspnet/HelpLocally/HelpLocally.Domain/obj/Debug/netcoreapp3.1/HelpLocally.Domain.AssemblyInfoInputs.cache
+C:/Users/dariamarek/dev/ATH/aspnet/HelpLocally/HelpLocally.Domain/obj/Debug/netcoreapp3.1/HelpLocally.Domain.AssemblyInfo.cs
+C:/Users/dariamarek/dev/ATH/aspnet/HelpLocally/HelpLocally.Domain/obj/Debug/netcoreapp3.1/HelpLocally.Domain.dll
+C:/Users/dariamarek/dev/ATH/aspnet/HelpLocally/HelpLocally.Domain/obj/Debug/netcoreapp3.1/HelpLocally.Domain.pdb
+/Users/trojan/Desktop/HelpLocally/HelpLocally.Domain/bin/Debug/netcoreapp3.1/HelpLocally.Domain.deps.json
+/Users/trojan/Desktop/HelpLocally/HelpLocally.Domain/bin/Debug/netcoreapp3.1/HelpLocally.Domain.dll
+/Users/trojan/Desktop/HelpLocally/HelpLocally.Domain/bin/Debug/netcoreapp3.1/HelpLocally.Domain.pdb
+/Users/trojan/Desktop/HelpLocally/HelpLocally.Domain/obj/Debug/netcoreapp3.1/HelpLocally.Domain.csprojAssemblyReference.cache
+/Users/trojan/Desktop/HelpLocally/HelpLocally.Domain/obj/Debug/netcoreapp3.1/HelpLocally.Domain.AssemblyInfoInputs.cache
+/Users/trojan/Desktop/HelpLocally/HelpLocally.Domain/obj/Debug/netcoreapp3.1/HelpLocally.Domain.AssemblyInfo.cs
+/Users/trojan/Desktop/HelpLocally/HelpLocally.Domain/obj/Debug/netcoreapp3.1/HelpLocally.Domain.dll
+/Users/trojan/Desktop/HelpLocally/HelpLocally.Domain/obj/Debug/netcoreapp3.1/HelpLocally.Domain.pdb

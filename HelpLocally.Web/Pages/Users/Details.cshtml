@@ -1,0 +1,32 @@
+﻿@page
+@model HelpLocally.Web.Pages.Users.Details
+
+@await Html.PartialAsync("_NavigationPartial", "users")
+
+<h4>
+    @Model.User.Login
+</h4>
+
+Vouchers
+
+<table class="table table-list">
+    <thead>
+    <tr>
+        <th>Offer name</th>
+        <th>Company</th>
+        <th>Start amount</th>
+        <th>Current amount</th>
+        <th>Expiration date</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var voucher in Model.User.Vouchers)
+    {
+       <td>@voucher.Offer.Name</td>
+       <td>@voucher.Offer.Company.Name</td>
+       <td>@voucher.StartAmount</td>
+       <td>@voucher.CurrentAmount</td>
+       <td>@voucher.ExpirationDate</td>
+    }
+    </tbody>
+</table>

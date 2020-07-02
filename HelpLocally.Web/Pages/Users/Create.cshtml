@@ -1,0 +1,16 @@
+@page
+@model CreateModel
+
+@await Html.PartialAsync("_NavigationPartial", "users")
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="User.Login"></label>
+        <input asp-for="User.Login" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label asp-for="User.Role"></label>
+        <select asp-for="User.Role" asp-items="Model.Roles" class="form-control"></select>
+    </div>
+    <button class="btn btn-primary">Zapisz</button>
+</form>

@@ -1,0 +1,25 @@
+@page
+@model IndexModel
+
+@await Html.PartialAsync("_NavigationPartial", "vouchers")
+
+<table class="table">
+	<thead>
+	<tr>
+		<th class="col">Start amount</th>
+		<th class="col">Current amount</th>
+		<th class="col">Expiration date</th>
+	</tr>
+	</thead>
+	<tbody>
+	@foreach (var item in Model.Vouchers)
+	{
+		<tr>
+			<td>@item.StartAmount</td>
+			<td>@item.CurrentAmount</td>
+			<td>@item.ExpirationDate.ToString("dd/MM/yyyy")</td>
+		</tr>
+	}
+	</tbody>
+
+</table>

@@ -1,0 +1,20 @@
+@page
+@model CreateModel
+
+@await Html.PartialAsync("_NavigationPartial", "offerTypes")
+
+
+<h5>Offer types</h5>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="OfferType.Name"></label>
+        <input asp-for="OfferType.Name" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label asp-for="OfferType.Description"></label>
+        <textarea asp-for="OfferType.Description" class="form-control"></textarea>
+    </div>
+    <button class="btn btn-success" type="submit">Save</button>
+    <a class="btn btn-danger" asp-page="/OfferTypes/Index">Cancel</a>
+</form>

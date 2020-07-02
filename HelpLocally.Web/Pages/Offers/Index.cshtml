@@ -1,0 +1,41 @@
+@page
+@using HelpLocally.Domain
+@model IndexModel
+
+@await Html.PartialAsync("_NavigationPartial", "offers")
+
+<div class="row">
+	@if (User.IsInRole(RolesDefaults.Seller) || User.IsInRole(RolesDefaults.Admin))
+	{
+		<a class="btn btn-success" href="~/Offers/Create">Create</a>
+	}
+</div>
+
+@foreach (var offer in Model.Offers)
+{
+	<div class="card" style="width: 18rem;">
+		<div class="card-body">
+			<h5 class="card-title">@offer.Name</h5>
+			<span class="card-subtitle mb-2 text-muted">@offer.OfferType.Name</span>
+			<p class="card-subtitle mb-2 text-muted">@offer.Company.Name</p>
+			<p class="card-text">@offer.Description</p>
+			<a href="#" class="card-link">Price: @offer.Price</a>
+
+			@if (User.IsInRole(RolesDefaults.Customer))
+			{
+				@if (!offer.IsDeleted)
+				{
+					
+				<form method="post">
+					<input type="hidden" value="@offer.Id" name="offerId"/>
+					<button class="btn btn-primary" asp-route-id="@offer.Id">Buy</button>
+				</form>
+				}
+				else
+				{
+					<button class="btn btn-warning disabled">Bought</button>
+				}
+			}
+		</div>
+	</div>
+}

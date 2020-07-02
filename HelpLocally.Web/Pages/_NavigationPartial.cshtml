@@ -1,0 +1,24 @@
+﻿@using System.Security.Claims
+@using HelpLocally.Domain
+@model string
+
+@if (User.Claims.Any())
+{
+	<ul class="nav nav-tabs">
+		<li class="nav-item">
+			<a class="nav-link btn @(Model == "users" ? "active" : string.Empty)" href="/Users">Users</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link btn @(Model == "offerTypes" ? "active" : string.Empty)" href="/OfferTypes">Offer types</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link btn @(Model == "offers" ? "active" : string.Empty)" href="/Offers">Offers</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link btn @(Model == "companies" ? "active" : string.Empty)" href="/Companies">Companies</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link btn @(Model == "vouchers" ? "active" : string.Empty)" href="/Vouchers">Vouchers</a>
+		</li>
+	</ul>
+}

@@ -1,0 +1,46 @@
+@page
+@using HelpLocally.Domain
+@model IndexModel
+
+@await Html.PartialAsync("_NavigationPartial", "offerTypes")
+
+<div class="row">
+	<h5 class="col-11">Offer types</h5>
+	@if (User.IsInRole(RolesDefaults.Admin))
+	{
+		<a class="btn btn-success" href="~/OfferTypes/Create">Create</a>
+	}
+</div>
+<br/>
+<form method="post">
+	<table class="table table-list">
+		<thead>
+		<tr>
+			<th>Name</th>
+			<th>Desctiption</th>
+			<th>Action</th>
+		</tr>
+		</thead>
+		<tbody>
+		@foreach (var offerType in Model.OfferTypes)
+		{
+			<tr>
+				<td>@offerType.Name</td>
+				<td>@offerType.Description</td>
+				@if (User.IsInRole(RolesDefaults.Admin))
+				{
+					<td class="btn-group">
+						<a class="btn btn-info" asp-page="./Edit" asp-route-id="@offerType.Id">Edit</a>
+						<button class="btn btn-danger"
+						        type="submit"
+						        asp-page-handler="delete"
+						        asp-route-id="@offerType.Id">
+							Delete
+						</button>
+					</td>
+				}
+			</tr>
+		}
+		</tbody>
+	</table>
+</form>

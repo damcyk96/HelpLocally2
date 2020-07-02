@@ -1,0 +1,17 @@
+@page "{id:int}"
+@model DetailsModel
+
+@await Html.PartialAsync("_NavigationPartial", "companies")
+
+@foreach (var offer in Model.Offers)
+{
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">@offer.Name</h5>
+            <span class="card-subtitle mb-2 text-muted">@offer.OfferType.Name</span>
+            <p class="card-subtitle mb-2 text-muted">@offer.Company.Name</p>
+            <p class="card-text">@offer.Description</p>
+            <a href="#" class="card-link">Price: @offer.Price</a>
+        </div>
+    </div>
+}

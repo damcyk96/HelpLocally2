@@ -1,0 +1,28 @@
+@page
+@model CreateModel
+
+@await Html.PartialAsync("_NavigationPartial", "offers")
+
+<form method="post">
+	<div class="form-group">
+		<label asp-for="Offer.Name"></label>
+		<input asp-for="Offer.Name" class="form-control"/>
+	</div>
+	<div class="form-group">
+		<label asp-for="Offer.Description"></label>
+		<input asp-for="Offer.Description" class="form-control"/>
+	</div>
+	<div class="form-group">
+		<label asp-for="Offer.Price"></label>
+		<input asp-for="Offer.Price" class="form-control"/>
+	</div>
+	<div class="form-group">
+		<label asp-for="Offer.OfferType"></label>
+		<select asp-for="Offer.OfferTypeId" asp-items="Model.OfferTypes" class="form-control"></select>
+	</div>
+	<div class="form-group">
+		<label asp-for="Offer.Company"></label>
+		<select asp-for="Offer.CompanyId" asp-items="Model.Companies" class="form-control"></select>
+	</div>
+	<button class="btn btn-primary">Save</button>
+</form>
